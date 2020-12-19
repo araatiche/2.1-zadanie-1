@@ -112,14 +112,6 @@ def reg():
 
         return render_template('success_reg.html', fullname=fullname)
 
-@app.route('/email', methods=['GET', 'POST'])
-def email():
-    if request.method == 'GET':
-        return render_template('app.html')
-    else:
-        email = request.form['email']
-
-        return render_template('email.html', email=email)
 
 end_message = " хуйня"
 
