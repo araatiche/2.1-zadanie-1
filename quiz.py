@@ -21,8 +21,10 @@ def quiz():
 
 @app.route('/summary', methods=['GET', 'POST'])
 def summary():
-    
-    return render_template('summary.html', end_message=end_message)
+    if request.method == 'GET':
+        return render_template('summary.html', end_message=end_message)
+    else:
+        return render_template('quiz.html')
 
 
 def main():
