@@ -1,9 +1,21 @@
-<h3>Система тестирования</h3>
-
+<h2>Система тестирования</h2>
+<h3>Нет аккаунта?</h3>
 <form action="reg" method="GET">
     <button type="submit">Зарегистрироваться</button>
 </form>
 
-<form action="login" method="GET">
+<br>
+
+<h3>Авторизация</h3>
+
+<form action="/" method="POST">
+    <label for="login">Логин</label>
+    <input name="login">
+
+    <label for="password">Пароль</label>
+    <input name="password">
+
     <button type="submit">Авторизация</button>
+
+    <p>{{ incorect_login_message }}</p>
 </form>
