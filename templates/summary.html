@@ -1,8 +1,8 @@
-<h1>Онлайн викторина!</h1>
+<h3>Система тестирования</h3>
 
-<p>Ваш результат: {{ answers_summary }} правильных ответов{{ end_message }}</p>
+<p>Ваш результат: {{right_answer_count}}/{{total_answer_count}} правильных ответов. {{ end_message }}</p>
 <p>Ваши ответы сохранены для дальнейшей обработки :)</p>
 
-<form action="/summary" method="POST">
-    <button type="submit">Попробовать еще раз</button>
+<form action="/" method="GET">
+    <button type="submit">Вернуться на главную</button>
   </form>
